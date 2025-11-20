@@ -1,8 +1,8 @@
-export default function Perfil({ texto }) {
+export default function Perfil({ resumen }) {
   return (
     <section>
-      <h3>Perfil</h3>
-      <p>{texto}</p>
+      <h3>Perfil Profesional</h3>
+      <p>{resumen}</p>
       <hr />
     </section>
   );
