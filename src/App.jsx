@@ -4,6 +4,9 @@ import CabeceraCV from "./components/CabeceraCV";
 import Perfil from "./components/Perfil";
 import Experiencia from "./components/Experiencia";
 import Educacion from "./components/Educacion";
+import StackTecnologias from "./components/StackTecnologias";
+import Proyectos from "./components/Proyectos";
+import Habilidades from "./components/Habilidades";
 
 export default function App() {
   return (
@@ -20,6 +23,12 @@ export default function App() {
       <Experiencia experiencias={cvData.experiencia} />
 
       <Educacion estudios={cvData.educacion} />
+
+      <StackTecnologias tecnologias={cvData.tecnologias} />
+
+      <Proyectos proyectos={cvData.proyectos} />
+
+      <Habilidades habilidades={cvData.habilidades} />
     </div>
   );
 }
