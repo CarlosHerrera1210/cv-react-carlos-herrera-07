@@ -1,39 +1,37 @@
 export const cvData = {
-  nombre: "Carlos Herrera",
-  profesion: "Desarrollador Frontend",
+  cabecera: {
+    nombre: "Carlos Herrera",
+    cargo: "Desarrollador Frontend",
+    ciudad: "Medellín, Colombia",
+    contacto: "carlosherrera@example.com",
+  },
+
   perfil:
-    "Soy un desarrollador entusiasta con experiencia en React, JavaScript y creación de interfaces modernas.",
+    "Desarrollador con experiencia en React, JavaScript y proyectos de frontend.",
+
+  experiencia: [
+    {
+      cargo: "Frontend Developer",
+      empresa: "Compañía X",
+      periodo: "2023 - 2024",
+    },
+    {
+      cargo: "Soporte Técnico",
+      empresa: "Tech Solutions",
+      periodo: "2021 - 2023",
+    },
+  ],
+
   educacion: [
     {
       institucion: "SENA",
-      titulo: "Tecnólogo en Análisis y Desarrollo de Software",
-      año: "2024",
+      titulo: "Tecnólogo ADSO",
+      periodo: "2022 - 2024",
     },
-  ],
-  experiencia: [
     {
-      empresa: "Empresa Tech",
-      cargo: "Frontend Developer",
-      año: "2023 - 2024",
-      funciones: [
-        "Desarrollo de interfaces en React",
-        "Consumo de APIs REST",
-        "Optimización de componentes",
-      ],
+      institucion: "Platzi",
+      titulo: "Curso Profesional de React",
+      periodo: "2023",
     },
-  ],
-  tecnologias: ["HTML", "CSS", "JavaScript", "React", "Git", "Node.js"],
-  proyectos: [
-    {
-      nombre: "API de Películas",
-      descripcion: "Proyecto CRUD completo con Express y SQLite",
-      link: "https://github.com/turepo",
-    },
-  ],
-  habilidades: [
-    "Responsabilidad",
-    "Comunicación",
-    "Trabajo en equipo",
-    "Liderazgo",
   ],
 };
