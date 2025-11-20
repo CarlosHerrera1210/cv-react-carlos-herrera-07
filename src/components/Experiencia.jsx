@@ -1,20 +1,15 @@
-export default function Experiencia({ trabajos }) {
+export default function Experiencia({ experiencias }) {
   return (
     <section>
-      <h3>Experiencia</h3>
-      {trabajos.map((t, index) => (
-        <div key={index}>
-          <h4>{t.empresa}</h4>
-          <p>
-            <strong>{t.cargo}</strong> - {t.año}
-          </p>
-          <ul>
-            {t.funciones.map((f, i) => (
-              <li key={i}>{f}</li>
-            ))}
-          </ul>
+      <h3>Experiencia Laboral</h3>
+
+      {experiencias.map((exp, i) => (
+        <div key={i}>
+          <strong>{exp.cargo}</strong> — {exp.empresa}
+          <p>{exp.periodo}</p>
         </div>
       ))}
+
       <hr />
     </section>
   );
