@@ -3,11 +3,11 @@ export const cvData = {
     nombre: "Carlos Herrera",
     cargo: "Desarrollador Frontend",
     ciudad: "Medellín, Colombia",
-    contacto: "carlosherrera@example.com",
+    contacto: "320 3959625",
   },
 
   perfil:
-    "Desarrollador con experiencia en React, JavaScript y proyectos de frontend.",
+    "Desarrollador Frontend con experiencia en React, JavaScript y creación de interfaces modernas.",
 
   experiencia: [
     {
@@ -25,7 +25,7 @@ export const cvData = {
   educacion: [
     {
       institucion: "SENA",
-      titulo: "Tecnólogo ADSO",
+      titulo: "Tecnólogo en ADSO",
       periodo: "2022 - 2024",
     },
     {
@@ -33,5 +33,27 @@ export const cvData = {
       titulo: "Curso Profesional de React",
       periodo: "2023",
     },
+  ],
+
+  tecnologias: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Git"],
+
+  proyectos: [
+    {
+      nombre: "API Películas",
+      descripcion: "Backend CRUD con Express y SQLite",
+      link: "https://github.com/turepo",
+    },
+    {
+      nombre: "CV en React",
+      descripcion: "Mi curriculum construido con componentes reutilizables",
+      link: "https://github.com/turepo",
+    },
+  ],
+
+  habilidades: [
+    "Responsabilidad",
+    "Trabajo en equipo",
+    "Resolución de problemas",
+    "Comunicación",
   ],
 };

@@ -1,29 +1,25 @@
+import { cvData } from "./data/cvData";
+
 import CabeceraCV from "./components/CabeceraCV";
 import Perfil from "./components/Perfil";
-import Educacion from "./components/Educacion";
 import Experiencia from "./components/Experiencia";
-import StackTecnologias from "./components/StackTecnologias";
-import Proyectos from "./components/Proyectos";
-import Habilidades from "./components/Habilidades";
-
-import { cvData } from "./data/cvData";
+import Educacion from "./components/Educacion";
 
 export default function App() {
   return (
     <div style={{ padding: 20 }}>
-      <CabeceraCV nombre={cvData.nombre} profesion={cvData.profesion} />
+      <CabeceraCV
+        nombre={cvData.cabecera.nombre}
+        cargo={cvData.cabecera.cargo}
+        ciudad={cvData.cabecera.ciudad}
+        contacto={cvData.cabecera.contacto}
+      />
 
-      <Perfil texto={cvData.perfil} />
+      <Perfil resumen={cvData.perfil} />
 
-      <Educacion items={cvData.educacion} />
+      <Experiencia experiencias={cvData.experiencia} />
 
-      <Experiencia trabajos={cvData.experiencia} />
-
-      <StackTecnologias tecnologias={cvData.tecnologias} />
-
-      <Proyectos proyectos={cvData.proyectos} />
-
-      <Habilidades habilidades={cvData.habilidades} />
+      <Educacion estudios={cvData.educacion} />
     </div>
   );
 }
